@@ -1,4 +1,4 @@
-# Nice Heading
+# Day 1
 
 ## Subheading H2
 
