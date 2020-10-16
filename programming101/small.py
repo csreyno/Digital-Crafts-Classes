@@ -29,20 +29,29 @@
 # elif day == 6:
 #     print("Saturday")
 
-#Exercise 5
+# #better programming practice for above
+# day = int(input("What day is it using (0-6) in place of the day?\n"))
+# days = ["Sunday", "Monday", "Tues", "Weds", "Thurs", "Fri", "Sat"]
+
+# #Exercise 5
 # day = int(input("What day is it using (0-6) in place of the day?\n"))
 # if day == 0:
 #     print("Sleep in")
 # elif day == 6:
 #     print("Sleep in")
-# elif day >= 1 or 2 or 3 or 4 or 5:
+# elif day == 1 or 2 or 3 or 4 or 5:
 #     print("GO TO WORK!")
 
+
+
 # #exercise 6
-# celsius = int(input("What is temp in C? "))
+# celsius = int(input("What is temp in degrees C? "))
 # fahr = (celsius * 9/5) + 32
 # print("%i F" % (fahr))
-# # print(int(temp * 9/5 + 32) + str(F))  how to get this to concatenate correctly?
+
+# # print(int(celsius * 9/5 + 32) + str(F))  how to get this to concatenate correctly?
+
+
 
 # #exercise 7
 # i = 1
@@ -50,7 +59,7 @@
 #     print(i)
 #     i += 1
 
-# #exercise 8
+# # #exercise 8
 # start = int(input("Start from: "))
 # end = int(input("End on: "))
 # while start <= end:
@@ -59,6 +68,20 @@
 
 # #exercise 9 - - prob needed a 'while' loop here
 # print("*****\n*****\n*****\n*****\n*****\n")
+# or
+# i = 0
+# while i < 5:
+#     print("*" * 5) # or print("******")
+#     i += 1
+# or
+# rows = 5
+# stars = "*****\n"
+
+# print(stars * rows)
+
+
+
 
 #exercise 10 - create a X * X size square of * at input of a number
-size = int(input("How big is the square? "))
+i = int(input("How big is the square? "))
+stars = ("*" * i)
