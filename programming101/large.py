@@ -16,12 +16,18 @@
 
 # print("Great I knew you could it.")
 
-print("I am thinking of a number between 1 and 10.\n")
 num = 5
-guess = int(input("What's the number?\n")
+guess = 0
 while guess != num:
-    guess = int(input("Nope, try again!"))
+    guess = int(input("What's the number?\n"))
+    if guess == num:
+        print("Correct! You Win!")
+    elif guess < num:
+        print("Number too low!")
+    else:
+        print("Number too high!")
 
-print("Correct! You Win!")
 
 #Exercise 4
+
+

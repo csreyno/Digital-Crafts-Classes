@@ -68,7 +68,9 @@
 
 # #exercise 9 - - prob needed a 'while' loop here
 # print("*****\n*****\n*****\n*****\n*****\n")
+
 # or
+
 # i = 0
 # while i < 5:
 #     print("*" * 5) # or print("******")
@@ -78,8 +80,6 @@
 # stars = "*****\n"
 
 # print(stars * rows)
-
-
 
 
 #exercise 10 - create a X * X size square of * at input of a number
