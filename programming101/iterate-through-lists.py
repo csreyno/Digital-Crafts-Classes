@@ -29,7 +29,7 @@
 #     print(index +1, my_stars)
 #     index += 1
 
-#exercise 3
+#exercise 3 - print sum of an array
 numbers = [2, 3, 3, 8]
 
 total = 0

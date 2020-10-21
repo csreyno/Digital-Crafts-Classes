@@ -1,4 +1,4 @@
-#Exercise 1 - create and print th sum of a list of numbers
+#Exercise 1 - create and print the sum of a list of numbers
 
 # numbers = [2, 3, 3, 8]
 
@@ -11,6 +11,14 @@
 
 # print(total)
 
+# #alternative
+# numbers = [2, 3, 3, 8]
+
+# total = 0
+# for num in numbers:
+#     total += num
+# print(total)
+
 #Exercise 2 - Create a list of numbers, print the largest of the numbers.
 
 # numbers = [2, 8, 3, 9]
@@ -21,9 +29,10 @@
 #         largest = x
 # print(largest)
 
+
 #exercise 3 - create a list of numbers, print the smallest of the numbers
 
-# numbers = [2, 8, 3, 9]
+# numbers = [2, 8, 3, 9]  #wrong
 
 # smallest = numbers[0]
 # for x in numbers:
@@ -55,8 +64,12 @@
 # contains every number in the given list which is positive
 
 # numbers = [-12, 8, -3, 9, 10, 12, 14]
+# new_list = []
+# for num in numbers:
+#     if num >0:
+#         new_list.append(num)
 
-
+# print(new_list)
 
 
 #exercise 7 - Create a list of numbers, and a single factor (also a number), create a 
@@ -74,9 +87,9 @@
 
 #exercise 8 - Given a string, print the string reversed.
 
-numbers = [-12, 8, -3, 9]
+# numbers = [-12, 8, -3, 9]
 
-i = len(numbers) -1
-while i >= 0:
-    print(numbers[i])
-    i -= 1
+# i = len(numbers) -1
+# while i >= 0:
+#     print(numbers[i])
+#     i -= 1
