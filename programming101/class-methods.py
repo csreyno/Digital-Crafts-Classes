@@ -29,24 +29,45 @@
 ## Exercise 1
 
 class Vehicle:
-    def __init__(self,type,top_speed,acceleration,position = 0,speed = 0):
-        self.type = type
+    def __init__(self,top_speed,acceleration,wheels = 4):  #originaklly had position and speed in this line but = 0
         self.top_speed = top_speed
         self.acceleration = acceleration
-        self.position = position
-        self.speed = speed
+        self.wheels = wheels
+        self.position = 0                   #put speed and position here so there's no flexibilty in them, will always start at 0
+        self.speed = 0
 
-    def move(self,speed):
-        self.position = self.position + speed
+    def move(self):
+        self.accelerate()
+        self.position = self.position + self.speed
 
-    def accelerate(self,):
-        
+    def accelerate(self):
+        self.speed = self.speed + self.acceleration  #can also be written as self.speed += self.acceleration  (this is a linear equation)
+        if self.speed > self.top_speed:
+            self.speed = self.top_speed
+    
+    def reset(self):            #not used in current setup
+        self.position = 0
+        self.speed = 0
 
-truck = Vehicle("Truck",80,5)
-motorcycle = Vehicle("Motorcycle",100,7)
-minivan = Vehicle("Minivan",75,3)
-motorhome = Vehicle("Motorhome",65,2)
-semi = Vehicle("Semi Truck",100,2)
+all_cars = {                        #this is a dictionary b/c uses {}, a dictionary contains "keys"
+    "camero":Vehicle(100,4),
+    "volvo":Vehicle(80,6),
+    "focus":Vehicle(25,10),
+    "fiat":Vehicle(85,2)
+}
 
-print(truck.type, truck.top_speed)
+for i in range(40):
+    for car_name in all_cars:
+        all_cars[car_name].move()
+
+for car_name in all_cars:
+    print(f"{car_name} - {all_cars[car_name].position}")
+
+# truck = Vehicle("Truck",80,5)
+# motorcycle = Vehicle("Motorcycle",100,7)
+# minivan = Vehicle("Minivan",75,3)
+# motorhome = Vehicle("Motorhome",65,2)
+# semi = Vehicle("Semi Truck",100,2)
+
+# print(truck.type,truck.top_speed)
 
