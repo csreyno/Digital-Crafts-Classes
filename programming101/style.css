@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Serif';
+    text-align: center;
+  }
+
+  .content {
+    background-color: rgb(137, 181, 199);
+    padding: 10px;
+  }
+
+.active {
+    background-color: rgb(117, 53, 53);
+    border: 10px solid rgb(163, 34, 34);
+    padding: 10px;
+}
+
+.completed {
+  padding: 10px, 100px;
+  border: 5px solid rgb(163, 34, 34);
+}
+

@@ -1,0 +1,38 @@
+
+
+
+.container {
+    padding-left: 20px;
+    position: sticky;
+    top: 70px;
+    left: 0;
+}
+.text {
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+.top {
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    background-color: rgb(68, 140, 161);
+    width: 100%;
+}
+.content {
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.section {
+    position: relative;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 35px;
+}

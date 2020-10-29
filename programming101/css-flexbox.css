@@ -1,0 +1,9 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(160, 166, 223);
+    /* How to center flex items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
