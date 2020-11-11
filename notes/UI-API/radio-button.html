@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<input id>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="radio">
+        <label for="cars">Cars
+            <input id="cars" name="transport" value="cars" type="radio">
+        </label>
+        <label for="trains">Trains
+            <input id="trains" checked name="transport" value="trains" type="radio">
+        </label>
+        <label for="planes">Planes
+            <input id="planes" name="transport" value="planes" type="radio">
+        </label>
+    </div>
+</body>
+</html>
+ 
+<!-- radio buttons cannot be unchecked if there is only a single button BUT if there is a group of buttons, like above, you can switch between them:
+    any radio element in the form that has the same name will switch from element to the one that is selected.
+If you put 'checked' in front of "name" (see above), that radio button will be initially checked -->
+

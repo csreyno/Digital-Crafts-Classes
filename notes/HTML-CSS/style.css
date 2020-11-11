@@ -1,0 +1,18 @@
+h1 {
+    color: blueviolet;
+    text-align: center;
+  }
+
+  .main_content {
+    background-color: rgb(137, 181, 199);
+    padding: 10px;
+  }
+
+ footer:hover {
+    background-color:darkturquoise;
+}
+
+.active {
+    color:green;
+    border: 1px solid rgb(163, 34, 34);
+}
