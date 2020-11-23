@@ -1,0 +1,18 @@
+let list = [
+    {
+        firstName:"chad",
+        lastName:"Reynolds",
+        email:"c.reynolds@gmail.com"
+    },
+    {
+        firstName:"bob",
+        lastName:"Reynolds",
+        email:"bob.reynolds@gmail.com"
+    },
+    {
+        firstName:"janet",
+        lastName:"Reynolds",
+        email:"janet.reynolds@gmail.com"
+    }
+]
+
