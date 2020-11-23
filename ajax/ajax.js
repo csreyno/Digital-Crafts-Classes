@@ -2,16 +2,32 @@
 
 //make an ajax request
 
+//ajax.js
+const ajax = (url, callback, method='GET')=>{
+if(!url) return console.error("Request Required")
+if(!callback) return console.error("Callback Required")
 const request = new XMLHttpRequest();
-request.onreadystatechange = (evt) => {
+request.addEventListener("readystatechange", evt=>{
     let req = evt.target;
-    console.log(req.readyState);
     if(req.readyState !== 4) return;
-    console.log(req.response);
-    // if(req.status === 200) console.log(req.response)
-};
-request.open("GET",'test.txt')
+    if(req.status === 200) return callback(req.response)
+    callback("")
+})
+request.open(method,url)
+
+
+//Setting some headers...Don't sweat it right now
+request.setRequestHeader("X-Requested-With","XMLHttpRequest");
+request.setRequestHeader("Access-Control-Allow-Origin","*");
+
+//request.setRequestHeader("Content-Type","application/json");
+//request.setRequestHeader("Accept","application/json");
+//Use above for APIs in the future
+
 request.send()
+}
+
+export default ajax;
 
 // const ajax = ()=>{
 //     const request = new XMLHttpRequest();
